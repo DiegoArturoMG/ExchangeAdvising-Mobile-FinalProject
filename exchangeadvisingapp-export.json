@@ -1,0 +1,40 @@
+{
+  "Education" : {
+    "España" : {
+      "Polytechnic University of Madrid" : {
+        "career_1" : "Computer Engineering",
+        "career_2" : "Software Engineering"
+      }
+    },
+    "Mexico" : {
+      "National Autonomous University of Mexico" : {
+        "career_1" : "Electric Engineering",
+        "career_2" : "Management Business Administration"
+      },
+      "National Polytechnic Institute" : {
+        "career_1" : "Computer Systems Engineering",
+        "career_2" : "Aeronautics Engineering"
+      }
+    },
+    "Taiwan" : {
+      "National Taiwan University of Science and Technology" : {
+        "career_1" : "Computer Science and Information Engineering",
+        "career_2" : "Architecture Engineering"
+      }
+    }
+  },
+  "Student" : {
+    "hLxED4AZ3kSCpIPh5LZTNqQQUMF2" : {
+      "about" : "Hi, I am a student from Mexico, if you want to know something about this beautiful country do not hesitate to contact me.\nJust have fun! :D",
+      "career" : "Computer Systems Engineering",
+      "city" : "Mexico",
+      "dateOfBirth" : "10/21/1996",
+      "gender" : "Male",
+      "lastname" : "Morales Gonzalez",
+      "name" : "Diego Arturo",
+      "phonenumber" : "+525534798193",
+      "school" : "National Poliytechnic Institute",
+      "username" : "diegoarturo2121@gmail.com"
+    }
+  }
+}

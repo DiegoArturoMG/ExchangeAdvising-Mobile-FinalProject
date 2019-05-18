@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "488928375209",
+    "firebase_url": "https://exchangeadvisingapp.firebaseio.com",
+    "project_id": "exchangeadvisingapp",
+    "storage_bucket": "exchangeadvisingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488928375209:android:65d3f951c2e18ed5",
+        "android_client_info": {
+          "package_name": "com.example.exchangeadvisingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488928375209-e2lk665o5jf0js1vp7c6vbej6ua3a7ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.exchangeadvisingapp",
+            "certificate_hash": "75712a6f41ec8e4b64cc8e5e56ad92f4fc835664"
+          }
+        },
+        {
+          "client_id": "488928375209-38gjo4gspp1uc9ajip3l54rrn7bp4hf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCui9i3HV-CIeBq9TNJ-uYOpzlPEh3reN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488928375209-38gjo4gspp1uc9ajip3l54rrn7bp4hf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

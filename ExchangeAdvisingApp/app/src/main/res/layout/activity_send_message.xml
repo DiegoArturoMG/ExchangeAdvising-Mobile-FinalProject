@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".Activities.SendMessage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_Education"
+                    android:layout_below="@+id/ll_infoPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_login"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_Return"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Return"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Education"
+                            android:layout_below="@+id/tv_Return"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/btn_clean"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:text="Clean"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_bg"
+                        />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_login"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="City"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/et_bg"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="text"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_btn_accept_City"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_login"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_accept_City"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:text="Continue"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_school"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="School"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_school"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/et_bg"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="text"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_btn_accept_School"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:layout_below="@+id/tv_login"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_accept_School"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:text="Continue"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_career"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Career"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_career"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/et_bg"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_btn_accept_Career"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_login"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_accept_Career"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:text="Continue"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_login"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Message"
+                                android:textColor="@color/white"
+                                android:textAllCaps="true"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/et_aboutYou"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/et_bg"
+                                    android:fontFamily="sans-serif-light"
+                                    android:gravity="top"
+                                    android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
+                                    android:maxLines="6"
+                                    android:minLines="3"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="15dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_login"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_btn_sendMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/btn_sendMessage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:text="Send Message"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
