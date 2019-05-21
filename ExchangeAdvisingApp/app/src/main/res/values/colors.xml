@@ -13,4 +13,6 @@
     <color name="gradStopStudent">#2639AC</color>
     <color name="gradStartPopup">#E5F0F1</color>
     <color name="gradStopPopup">#23A7D8</color>
+    <color name="gradStartMenuStudent">#FFFFFF</color>
+    <color name="gradStopMenuStudent">#3D9DC2</color>
 </resources>

@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.exchangeadvisingapp.Adapters.MessageAdapter;
+import com.example.exchangeadvisingapp.Adapters.RecyclerViewHolder;
 import com.example.exchangeadvisingapp.Classes.Career;
 import com.example.exchangeadvisingapp.Classes.City;
 import com.example.exchangeadvisingapp.Classes.Education;
@@ -40,7 +40,7 @@ public class ViewMessages extends AppCompatActivity {
 
     private static final String TAG = "MyActivity";
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
+    private RecyclerViewHolder.MessageAdapter adapter;
 
     private List<MessageReceived> listMessages;
 
@@ -94,10 +94,7 @@ public class ViewMessages extends AppCompatActivity {
 
     private void showData(DataSnapshot dataSnapshot) {
 
-        for(DataSnapshot ds : dataSnapshot.getChildren()){
-
-            emisorID = ds.getValue(Message.class).getEmisor();
-            mensaje = ds.getValue(Message.class).getMensaje();
+        for(final DataSnapshot ds : dataSnapshot.getChildren()){
 
             final FirebaseDatabase userDatabase = FirebaseDatabase.getInstance();
             DatabaseReference userDatabaseReference = userDatabase.getReference("Student").child(ds.getValue(Message.class).getEmisor());
@@ -105,6 +102,9 @@ public class ViewMessages extends AppCompatActivity {
             userDatabaseReference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                    emisorID = ds.getValue(Message.class).getEmisor();
+                    mensaje = ds.getValue(Message.class).getMensaje();
 
                     String name = dataSnapshot.getValue(Student.class).getName();
                     String lastname = dataSnapshot.getValue(Student.class).getLastname();
@@ -115,7 +115,7 @@ public class ViewMessages extends AppCompatActivity {
 
                     listMessages.add(new MessageReceived(emisorID, emisorUserName, mensaje));
 
-                    adapter = new MessageAdapter(listMessages,ViewMessages.this);
+                    adapter = new RecyclerViewHolder.MessageAdapter(listMessages,ViewMessages.this);
                     recyclerView.setAdapter(adapter);
                 }
 

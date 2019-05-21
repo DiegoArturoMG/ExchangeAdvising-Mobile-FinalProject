@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.SendMessage"></activity>
+        <activity android:name=".Activities.MessagePrivate"></activity>
+        <activity android:name=".Activities.SendMessage" />
         <activity android:name=".Activities.ViewMessages" />
         <activity android:name=".Activities.ModifyStudent" />
         <activity

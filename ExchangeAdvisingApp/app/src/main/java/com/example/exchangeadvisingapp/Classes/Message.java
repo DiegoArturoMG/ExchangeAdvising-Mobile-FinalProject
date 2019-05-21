@@ -1,6 +1,8 @@
 package com.example.exchangeadvisingapp.Classes;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable {
 
     private String emisor;
     private String receptor;
@@ -11,6 +13,11 @@ public class Message {
     public Message(String emisor, String receptor, String mensaje) {
         this.emisor = emisor;
         this.receptor = receptor;
+        this.mensaje = mensaje;
+    }
+
+    public Message(String emisor, String mensaje) {
+        this.emisor = emisor;
         this.mensaje = mensaje;
     }
 
